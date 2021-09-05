@@ -60,13 +60,13 @@ set cursorline
 imap jj <Esc>:w<CR>
 
 "--------------Vim-Plug--------------
-call plug#begin('C:\Users\23862\vimfiles\plugged')
+call plug#begin('~/.vim/plugged')
 
 "---markdown
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 Plug 'mzlogin/vim-markdown-toc'
-"Plug 'dkarter/bullets.vim'
+Plug 'dkarter/bullets.vim'
 Plug 'SirVer/ultisnips'
 Plug 'iamcco/markdown-preview.nvim', {'do':{-> mdkp#util#install()}, 'for':['markdown','vim-plug']}
 Plug 'tpope/vim-surround'
@@ -103,7 +103,7 @@ set laststatus=2
 set noshowmode
 
 let g:lightline = {
-    \'colorscheme':'deus_my',
+    \'colorscheme':'deusmy',
     \'mode_map':{
     \   'n' : 'N',
     \   'i' : 'I',
