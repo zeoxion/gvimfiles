@@ -1,6 +1,5 @@
 "System
 set nocompatible    "不使用vi
-language en
 
 "操作
 set history=100       "history中需要记录的行数
