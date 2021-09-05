@@ -81,7 +81,7 @@ set cursorline
 imap jj <Esc>:w<CR>
 
 "--------------Vim-Plug--------------
-call plug#begin('C:\Users\23862\vimfiles\plugged')
+call plug#begin('C:\Users\23862\vim_plug')
 
 "---markdown
 Plug 'godlygeek/tabular'
