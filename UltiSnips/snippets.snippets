@@ -1,0 +1,43 @@
+snippet s
+snippet $1 "$2" $3
+$4
+${5:endsnippet}
+
+$0
+endsnippet
+
+snippet c "" 
+context "$1"
+snippet $2 "$3" $4
+$5
+${6:endsnippet}
+
+$0
+endsnippet
+
+snippet m "" 
+context "math()"
+snippet $1 "$2" iA
+$3
+${7:endsnippet}
+
+$0
+endsnippet
+
+snippet d "" 
+context "math()"
+snippet $1 "${2:$1}" iA
+\`!p
+if(matnx()):
+	snip.rv=\displaystyle
+elif(matny()):
+
+else:
+	snip.rv=ERROR
+\`
+$3
+${4:endsnippet}
+
+$0
+endsnippet
+
