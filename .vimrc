@@ -103,7 +103,7 @@ set laststatus=2
 set noshowmode
 
 let g:lightline = {
-    \'colorscheme':'deusmy',
+    \'colorscheme':'deus_my',
     \'mode_map':{
     \   'n' : 'N',
     \   'i' : 'I',
