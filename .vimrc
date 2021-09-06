@@ -22,6 +22,7 @@ endfunc
 
 " 绑定检测键位（按键后样式名信息会输出在指令栏的位置）
 nnoremap <leader>yi :call <SID>SynStack()<CR>
+"<leader>:\
 
 
 "文件格式
@@ -54,6 +55,22 @@ set nofoldenable         "禁止折叠
 
 set cursorcolumn         "十字架
 set cursorline
+
+" Set cursor shape and color
+if &term =~ "xterm"
+    " INSERT mode
+    let &t_SI = "\<Esc>[6 q" . "\<Esc>]12;blue\x7"
+    " REPLACE mode
+    let &t_SR = "\<Esc>[3 q" . "\<Esc>]12;black\x7"
+    " NORMAL mode
+    let &t_EI = "\<Esc>[2 q" . "\<Esc>]12;green\x7"
+endif
+" 1 -> blinking block  闪烁的方块
+" 2 -> solid block  不闪烁的方块
+" 3 -> blinking underscore  闪烁的下划线
+" 4 -> solid underscore  不闪烁的下划线
+" 5 -> blinking vertical bar  闪烁的竖线
+" 6 -> solid vertical bar  不闪烁的竖线
 
 "-----------------map---------------------------
 
@@ -136,4 +153,3 @@ let g:bullets_pad_right=0
 hi! link conceal texmathzonex
 hi! nontext ctermfg=0 ctermbg=NONE guifg=gray guibg=NONE
 hi! specialkey ctermfg=0 ctermbg=NONE guifg=gray guibg=NONE
-hi Cursor guifg=#ffffff guibg=#6a818e
