@@ -3757,6 +3757,7 @@ cefg 册封
 cefj 策反
 cehv 测绘
 cehx 策划
+cehzi 测厚
 cei 厕
 ceid 厕
 ceiu 测出
@@ -10694,7 +10695,7 @@ gldx 国立大学
 glfj 广泛
 glfu 光复
 glgc 广告
-glgl 逛逛 咕噜咕噜
+glgl 光光 逛逛 咕噜咕噜
 glgq 改来改去
 glgu 光顾
 glgw 孤陋寡闻
