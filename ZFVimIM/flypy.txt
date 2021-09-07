@@ -1508,7 +1508,7 @@ bhyj 榜眼
 bhys 不好意思
 bhzd 绑在
 bhzi 棒子
-bi 比
+bi 不出 比
 bian 彼岸
 biat 鲾
 bib 毙
@@ -37360,6 +37360,7 @@ uijr 试卷
 uijt 视觉
 uiju 诗句
 uijx 施加
+uijxbhc 时间信号
 uijy 省吃俭用
 uik 嗜
 uika 噬
