@@ -85,13 +85,19 @@ $0
 endsnippet
 
 context "math()"
-snippet case "case" iA
+snippet case "case" bA
 \\begin\{cases\}
 $1
 \\end\{cases\}
-$0
 endsnippet
 
+context "math()"
+snippet 2case "case" bA
+\\begin\{cases\}
+$1, &$2\\\\
+$3, &$4
+\\end\{cases\}
+endsnippet
 context "math()"
 snippet gathe "gathered" iA
 \left.\begin{gathered}
@@ -202,7 +208,7 @@ endsnippet
 
 context "math()"
 snippet long "xlongequal" iA
-\xlongequal{${1:def}}[${2:down}]
+\xlongequal{${1:def}}[$2]
 endsnippet
 
 context "math()"
@@ -401,6 +407,11 @@ snippet ttt "(t)" iA
 endsnippet
 
 context "math()"
+snippet xxx "(x)" iA
+(x)
+endsnippet
+
+context "math()"
 snippet ooo "infty" iA
 \infty
 endsnippet
@@ -414,4 +425,37 @@ context "math()"
 snippet cos "cos" iA
 \cos
 endsnippet
+
+snippet tem "tem" A
+name: $1  
+definition:  
+$$2$  
+usage:$3
+endsnippet
+
+context "math()"
+snippet || "\left|" iA
+\left| $1 \right|
+endsnippet
+
+context "math()"
+snippet (( "\left(" iA
+\left( $1 \right)
+endsnippet
+
+context "math()"
+snippet [[ "\left|" iA
+\left[ $1 \right]
+endsnippet
+
+context "math()"
+snippet {{ "\left|" iA
+\left\{ $1 \right\}
+endsnippet
+
+context "math()"
+snippet ows "otherwise" iA
+otherwise
+endsnippet
+
 
