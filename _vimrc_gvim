@@ -79,6 +79,7 @@ set cursorline
 "-----------------map---------------------------
 
 imap jj <Esc>:w<CR>
+noremap oo o<esc>
 
 "--------------Vim-Plug--------------
 call plug#begin('C:\Users\23862\vim_plug')
