@@ -427,6 +427,41 @@ snippet ooo "infty" iA
 endsnippet
 
 context "math()"
+snippet symbol "symbol 符号"
+This is a line of symbol
+endsnippet
+
+context "math()"
+snippet +- "+-" iA
+\pm
+endsnippet
+
+context "math()"
+snippet -+ "-+" iA
+\mp
+endsnippet
+
+context "math()"
+snippet cd "cdot" iA
+\cdot
+endsnippet
+
+context "math()"
+snippet != "no equal" iA
+\ne
+endsnippet
+
+context "math()"
+snippet == "equiv" iA
+\equiv
+endsnippet
+
+context "math()"
+snippet -= "approx" iA
+\approx
+endsnippet
+
+context "math()"
 snippet sin "sin" iA
 \sin
 endsnippet
@@ -436,12 +471,11 @@ snippet cos "cos" iA
 \cos
 endsnippet
 
-snippet tem "tem" A
-name: $1  
-definition:  
-$$2$  
-usage:$3
+context "math()"
+snippet tan "tan" iA
+\tan
 endsnippet
+
 
 context "math()"
 snippet || "\left|" iA

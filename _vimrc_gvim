@@ -76,9 +76,10 @@ set nofoldenable         "禁止折叠
 set cursorcolumn         "十字架
 set cursorline
 
-"-----------------map---------------------------
+"-----------------key map---------------------------
 
 imap jj <Esc>:w<CR>
+nmap G Gzz
 
 "--------------Vim-Plug--------------
 call plug#begin('C:\Users\23862\vim_plug')
