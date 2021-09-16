@@ -12238,6 +12238,7 @@ hcgv 好贵
 hcgz 壕沟
 hch 浩瀚
 hchc 好好
+hchcfw 好耗费
 hche 好喝
 hchj 好汉
 hchk 好坏
@@ -46603,7 +46604,7 @@ ybug 硍
 ybuh 用不上
 ybui 饮食
 ybur 饮
-ybuu 引述
+ybuu 因数 引述
 ybuv 饮水
 ybuw 也不失为
 ybux 印刷
@@ -47852,7 +47853,7 @@ yjhw 甗
 yjhx 眼花 衣锦还乡
 yjhy 欲拒还迎
 yjhz 咽喉
-yji 颜 衍
+yji 衍 颜
 yjia 严查
 yjif 雁
 yjig 严惩 魇
