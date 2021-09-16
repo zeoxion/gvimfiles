@@ -110,7 +110,15 @@ snippet sumf "infty sum" iA
 `!p
 if(mathx()):
 	snip.rv='\displaystyle'
-`\sum_{${1:-\infty}^{${2:\infty}}$0
+`\sum_{${1:-\infty}}^{${2:\infty}}$0
+endsnippet
+
+context "math()"
+snippet summ "infty sum" iA
+`!p
+if(mathx()):
+	snip.rv='\displaystyle'
+`\sum_{$1}^{$2}$0
 endsnippet
 
 context "math()"
@@ -118,7 +126,7 @@ snippet sumi "isum" iA
 `!p
 if(mathx()):
 	snip.rv='\displaystyle'
-`\sum_{${1:i}=${2:0}^{${3:n}}$0
+`\sum_{${1:i}=${2:0}}^{${3:n}}$0
 endsnippet
 
 context "math()"
@@ -532,6 +540,16 @@ endsnippet
 context "math()"
 snippet FF "mathscr{F}, fourier" iA
 \mathscr{F}\\{$1\\}
+endsnippet
+
+context "math()"
+snippet vv "vector" iA
+\vec{$1}
+endsnippet
+
+context "math()"
+snippet hh "hat" iA
+\hat{$1}
 endsnippet
 
 
