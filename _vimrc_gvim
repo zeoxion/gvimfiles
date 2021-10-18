@@ -10,8 +10,8 @@ set tabstop=4       "tab显示为4格
 set expandtab       "tab为4空格而不是制表符
 
 "auto correct spelling error
-setlocal spell
-set spell spelllang=en,cjk
+autocmd BufRead,BufNewFile *.md set spell | set spelllang=en,cjk
+"set spelllang=en,cjk
 inoremap <C-l> <c-g>u<Esc>[s1z=']a<c-g>u
 autocmd FileType markdown set spell spelllang=en,cjk
 set langmenu=en_US.UTF-8
