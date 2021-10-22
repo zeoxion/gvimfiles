@@ -142,8 +142,8 @@ let g:lightline = {
     \   't': 'T',
     \},
     \'active':{
-    \   'left':[['mode','paste'],['bufnum'],['filename','fileencoding','fileformat']],
-    \   'right':[['mode','paste'],['lineinfo'],['time']],
+    \   'left':[['mode','paste'],['bufnum'],['filename']],
+    \   'right':[['mode','paste'],['lineinfo'],['fileencoding','fileformat']],
     \},
     \'component':{
     \   'filename':'%t%m%r%h%w %y',

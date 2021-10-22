@@ -110,7 +110,7 @@ snippet sumf "infty sum" iA
 `!p
 if(mathx()):
 	snip.rv='\displaystyle'
-`\sum_{${1:-\infty}}^{${2:\infty}}$0
+`\sum_{${1:n}-\infty}^{${2:\infty}}$0
 endsnippet
 
 context "math()"
@@ -138,13 +138,29 @@ if(mathx()):
 endsnippet
 
 context "math()"
-snippet sumi "isum" iA
+snippet prodf "infty prod 连乘" iA
 `!p
 if(mathx()):
 	snip.rv='\displaystyle'
-`\sum_{${1:i}=${2:0}}^{${3:n}}$0
+`\prod_{${1:n}-\infty}^{${2:\infty}}$0
 endsnippet
+
 context "math()"
+snippet prodd "prod" iA
+`!p
+if(mathx()):
+	snip.rv='\displaystyle'
+`\prod_{$1}^{$2}$0
+endsnippet
+
+context "math()"
+snippet prodi "iprod" iA
+`!p
+if(mathx()):
+	snip.rv='\displaystyle'
+`\prod_{${1:i}=${2:0}}^{${3:n}}$0
+endsnippet
+
 snippet intf "infty int" iA
 `!p
 if(mathx()):
@@ -549,6 +565,11 @@ endsnippet
 
 context "math()"
 snippet {{ "\left|" iA
+\\\{ $1 \\\}
+endsnippet
+
+context "math()"
+snippet \{{ "\left|" iA
 \left\\\{ $1 \right\\\}
 endsnippet
 
@@ -611,7 +632,6 @@ context "math()"
 snippet ejo "(e^{j omega})" iA
 (e^{j \omega})
 endsnippet
-
 
 context "math()"
 snippet e-jo "(e^{-j omega})" iA
