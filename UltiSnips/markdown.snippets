@@ -114,7 +114,7 @@ if(mathx()):
 endsnippet
 
 context "math()"
-snippet summ "infty sum" iA
+snippet summ "sum" iA
 `!p
 if(mathx()):
 	snip.rv='\displaystyle'
@@ -129,6 +129,21 @@ if(mathx()):
 `\sum_{${1:i}=${2:0}}^{${3:n}}$0
 endsnippet
 
+context "math()"
+snippet sumn "sum, n" iA
+`!p
+if(mathx()):
+	snip.rv='\displaystyle'
+`\sum_{n=${1:-\infty}}^{${2:\infty}}$0
+endsnippet
+
+context "math()"
+snippet sumi "isum" iA
+`!p
+if(mathx()):
+	snip.rv='\displaystyle'
+`\sum_{${1:i}=${2:0}}^{${3:n}}$0
+endsnippet
 context "math()"
 snippet intf "infty int" iA
 `!p
@@ -590,5 +605,16 @@ endsnippet
 context "math()"
 snippet Raw "Rightarrow" iA
 \Rightarrow
+endsnippet
+
+context "math()"
+snippet ejo "(e^{j omega})" iA
+(e^{j \omega})
+endsnippet
+
+
+context "math()"
+snippet e-jo "(e^{-j omega})" iA
+(e^{-j \omega})
 endsnippet
 
