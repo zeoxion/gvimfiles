@@ -80,6 +80,7 @@ set cursorline
 
 imap jj <Esc>:w<CR>
 nmap G Gzz
+nmap P o<Esc>p
 
 "--------------Vim-Plug--------------
 call plug#begin('C:\Users\23862\vim_plug')
@@ -94,8 +95,8 @@ Plug 'iamcco/markdown-preview.nvim', {'do':{-> mdkp#util#install()}, 'for':['mar
 Plug 'tpope/vim-surround'
 Plug 'itchyny/lightline.vim'
 "Plug 'jiangmiao/auto-pairs'
-Plug 'ZSaberLv0/ZFVimIM'
-Plug 'ZSaberLv0/ZFVimJob'
+"Plug 'ZSaberLv0/ZFVimIM'
+"Plug 'ZSaberLv0/ZFVimJob'
 
 call plug#end()
 
@@ -157,36 +158,36 @@ let g:bullets_renumber_on_change=0 "禁止自动重排序 手动排序命令gN
 let g:bullets_pad_right=0
 
 "---ZSaberLv0/ZFVimIM
-function! s:myLocalDb()
-    let db = ZFVimIM_dbInit({
-                \   'name' : 'flypy',
-                \ })
-    call ZFVimIM_cloudRegister({
-                \   'mode' : 'local',
-                \   'dbId' : db['dbId'],
-                \   'repoPath' : 'C:\Users\23862\vimfiles\ZFVimIM',
-                \   'dbFile' : 'flypy.txt'
-                \ })
-endfunction
-autocmd User ZFVimIM_event_OnDbInit call s:myLocalDb()
+"function! s:myLocalDb()
+"    let db = ZFVimIM_dbInit({
+"                \   'name' : 'flypy',
+"                \ })
+"    call ZFVimIM_cloudRegister({
+"                \   'mode' : 'local',
+"                \   'dbId' : db['dbId'],
+"                \   'repoPath' : 'C:\Users\23862\vimfiles\ZFVimIM',
+"                \   'dbFile' : 'flypy.txt'
+"                \ })
+"endfunction
+"autocmd User ZFVimIM_event_OnDbInit call s:myLocalDb()
 
-let g:ZFVimIM_keymap = 0
-
-nnoremap <expr><silent> ;; ZFVimIME_keymap_toggle_n()
-inoremap <expr><silent> ;; ZFVimIME_keymap_toggle_i()
-vnoremap <expr><silent> ;; ZFVimIME_keymap_toggle_v()
-
-nnoremap <expr><silent> ;: ZFVimIME_keymap_next_n()
-inoremap <expr><silent> ;: ZFVimIME_keymap_next_i()
-vnoremap <expr><silent> ;: ZFVimIME_keymap_next_v()
-
-nnoremap <expr><silent> ;, ZFVimIME_keymap_add_n()
-inoremap <expr><silent> ;, ZFVimIME_keymap_add_i()
-xnoremap <expr><silent> ;, ZFVimIME_keymap_add_v()
-
-nnoremap <expr><silent> ;. ZFVimIME_keymap_remove_n()
-inoremap <expr><silent> ;. ZFVimIME_keymap_remove_i()
-xnoremap <expr><silent> ;. ZFVimIME_keymap_remove_v()
+"let g:zfvimim_keymap = 0
+"
+"nnoremap <expr><silent> ;; ZFVimIME_keymap_toggle_n()
+"inoremap <expr><silent> ;; ZFVimIME_keymap_toggle_i()
+"vnoremap <expr><silent> ;; ZFVimIME_keymap_toggle_v()
+"
+"nnoremap <expr><silent> ;: ZFVimIME_keymap_next_n()
+"inoremap <expr><silent> ;: ZFVimIME_keymap_next_i()
+"vnoremap <expr><silent> ;: ZFVimIME_keymap_next_v()
+"
+"nnoremap <expr><silent> ;, ZFVimIME_keymap_add_n()
+"inoremap <expr><silent> ;, ZFVimIME_keymap_add_i()
+"xnoremap <expr><silent> ;, ZFVimIME_keymap_add_v()
+"
+"nnoremap <expr><silent> ;. ZFVimIME_keymap_remove_n()
+"inoremap <expr><silent> ;. ZFVimIME_keymap_remove_i()
+"xnoremap <expr><silent> ;. ZFVimIME_keymap_remove_v()
 
 "-------------highlight----------------
 hi! link conceal texmathzonex
