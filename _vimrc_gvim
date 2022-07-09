@@ -83,7 +83,7 @@ nmap G Gzz
 nmap P o<Esc>p
 
 "--------------Vim-Plug--------------
-call plug#begin('C:\Users\23862\vim_plug')
+call plug#begin('~\vim-plug')
 
 "---markdown
 Plug 'godlygeek/tabular'
