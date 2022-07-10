@@ -61,7 +61,7 @@ if &term =~ "xterm"
     " INSERT mode
     let &t_SI = "\<Esc>[6 q" . "\<Esc>]12;blue\x7"
     " REPLACE mode
-    let &t_SR = "\<Esc>[3 q" . "\<Esc>]12;black\x7"
+    let &t_SR = "\<Esc>[3 q" . "\<Esc>]12;red\x7"
     " NORMAL mode
     let &t_EI = "\<Esc>[2 q" . "\<Esc>]12;green\x7"
 endif
@@ -89,8 +89,8 @@ Plug 'iamcco/markdown-preview.nvim', {'do':{-> mdkp#util#install()}, 'for':['mar
 Plug 'tpope/vim-surround'
 Plug 'itchyny/lightline.vim'
 "Plug 'jiangmiao/auto-pairs'
-Plug 'ZSaberLv0/ZFVimIM'
-Plug 'ZSaberLv0/ZFVimJob'
+"Plug 'ZSaberLv0/ZFVimIM'
+"Plug 'ZSaberLv0/ZFVimJob'
 
 call plug#end()
 
@@ -152,19 +152,19 @@ let g:bullets_renumber_on_change=0 "禁止自动重排序 手动排序命令gN
 let g:bullets_pad_right=0
 
 "---ZSaberLv0/ZFVimIM
-function! s:myLocalDb()
-    let db = ZFVimIM_dbInit({
-                \   'name' : 'flypy',
-                \ })
-    call ZFVimIM_cloudRegister({
-                \   'mode' : 'local',
-                \   'dbId' : db['dbId'],
-                \   'repoPath' : '~/.vim/ZFVimIM',
-                \   'dbFile' : 'flypy.txt'
-                \ })
-endfunction
-autocmd User ZFVimIM_event_OnDbInit call s:myLocalDb()
-"-------------highlight----------------
-hi! link conceal texmathzonex
-hi! nontext ctermfg=0 ctermbg=NONE guifg=gray guibg=NONE
-hi! specialkey ctermfg=0 ctermbg=NONE guifg=gray guibg=NONE
+"function! s:myLocalDb()
+"    let db = ZFVimIM_dbInit({
+"                \   'name' : 'flypy',
+"                \ })
+"    call ZFVimIM_cloudRegister({
+"                \   'mode' : 'local',
+"                \   'dbId' : db['dbId'],
+"                \   'repoPath' : '~/.vim/ZFVimIM',
+"                \   'dbFile' : 'flypy.txt'
+"                \ })
+"endfunction
+"autocmd User ZFVimIM_event_OnDbInit call s:myLocalDb()
+""-------------highlight----------------
+"hi! link conceal texmathzonex
+"hi! nontext ctermfg=0 ctermbg=NONE guifg=gray guibg=NONE
+"hi! specialkey ctermfg=0 ctermbg=NONE guifg=gray guibg=NONE
