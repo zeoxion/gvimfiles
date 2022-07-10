@@ -85,8 +85,13 @@ imap jj <Esc>:w<CR>
 nmap G Gzz
 nmap P o<Esc>p
 
+<<<<<<< HEAD
 "--------------Vim-plug--------------
 call plug#begin('~\vimfiles\vim-plug')
+=======
+"--------------Vim-Plug--------------
+call plug#begin('~\vim-plug')
+>>>>>>> 2193c1792dc9fd43ccad1f81774dc1549d0f2e3a
 
 "---markdown
 Plug 'godlygeek/tabular'
