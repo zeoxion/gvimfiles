@@ -79,19 +79,24 @@ set nofoldenable         "禁止折叠
 set cursorcolumn         "十字架
 set cursorline
 
+":h gcr/:h guicursor
+set gcr=n:block-blinkon0-nCursor
+"set gcr=c:ver40-blinkon0-ncursor
+set gcr=c:block-blinkon0-ncursor
+"set gcr=i:ver40-blinkon0-icursor
+set gcr=i:block-blinkon0-icursor
+set gcr=v:hor30-blinkon0-vCursor
+
+
+
 "-----------------key map---------------------------
 
 imap jj <Esc>:w<CR>
 nmap G Gzz
 nmap P o<Esc>p
 
-<<<<<<< HEAD
 "--------------Vim-plug--------------
 call plug#begin('~\vimfiles\vim-plug')
-=======
-"--------------Vim-Plug--------------
-call plug#begin('~\vim-plug')
->>>>>>> 2193c1792dc9fd43ccad1f81774dc1549d0f2e3a
 
 "---markdown
 Plug 'godlygeek/tabular'
@@ -225,7 +230,12 @@ nnoremap<silent> <F11> :GvimTweakToggleFullScreen<CR>
 hi! link conceal texmathzonex
 hi! nontext ctermfg=0 ctermbg=NONE guifg=gray guibg=NONE
 hi! specialkey ctermfg=0 ctermbg=NONE guifg=gray guibg=NONE
-hi Cursor guifg=#ffffff guibg=#6a818e
+"hi Cursor guifg=#ffffff guibg=#6a818e
+hi nCursor guifg=#292c33 guibg=#98c379
+hi iCursor guifg=#292c33 guibg=#61afef
+hi vCursor guifg=#292c33 guibg=#c678dd
+hi link CursorColumn Cursor
+hi link CursorLine Cursor
 
 function! ChineseCount() range
 	let save = @z
