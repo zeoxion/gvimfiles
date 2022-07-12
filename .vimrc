@@ -77,7 +77,7 @@ endif
 imap jj <Esc>:w<CR>
 
 "--------------Vim-Plug--------------
-call plug#begin('~/.vim_plug')
+call plug#begin('~/.vim/vim-plug')
 
 "---markdown
 Plug 'godlygeek/tabular'
@@ -85,12 +85,12 @@ Plug 'plasticboy/vim-markdown'
 Plug 'mzlogin/vim-markdown-toc'
 Plug 'dkarter/bullets.vim'
 Plug 'SirVer/ultisnips'
-Plug 'iamcco/markdown-preview.nvim', {'do':{-> mdkp#util#install()}, 'for':['markdown','vim-plug']}
+"Plug 'iamcco/markdown-preview.nvim', {'do':{-> mdkp#util#install()}, 'for':['markdown','vim-plug']}
 Plug 'tpope/vim-surround'
 Plug 'itchyny/lightline.vim'
 "Plug 'jiangmiao/auto-pairs'
-"Plug 'ZSaberLv0/ZFVimIM'
-"Plug 'ZSaberLv0/ZFVimJob'
+Plug 'ZSaberLv0/ZFVimIM'
+Plug 'ZSaberLv0/ZFVimJob'
 
 call plug#end()
 
