@@ -106,6 +106,14 @@ $1
 endsnippet
 
 context "math()"
+snippet limm "limitation" iA
+`!p
+if(mathx()):
+	snip.rv='\displaystyle'
+`\lim_{${1:x} \to ${2:+\infty}} $3 = $0
+endsnippet
+
+context "math()"
 snippet sumf "infty sum" iA
 `!p
 if(mathx()):
@@ -523,7 +531,7 @@ endsnippet
 
 context "math()"
 snippet ... "cdots" iA
- /cdots 
+ \cdots 
 endsnippet
 
 context "math()"
