@@ -58,7 +58,8 @@ set guioptions-=r        "删去滚动条
 "显示
 set number relativenumber "显示相对行号
 set nonu                  "行号
-set conceallevel=2 "缩略显示
+"set conceallevel=2 "缩略显示
+set conceallevel=0 "缩略显示
 set concealcursor="nc"
 let g:tex_conceal='abdmg'
 set wrap           "自动换行

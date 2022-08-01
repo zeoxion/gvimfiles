@@ -23,6 +23,10 @@ def math():
 
 endglobal
 
+snippet ^^ "^[]" iA
+^[$1]$0
+endsnippet
+
 snippet tmd "time date"
 `!p
 import time
@@ -235,12 +239,17 @@ endsnippet
 
 context "math()"
 snippet parx "partial p\px" iA
-\dfrac{\partial$1}{\partial x}$0
+\dfrac{\partial $1}{\partial x}$0
 endsnippet
 
 context "math()"
 snippet part "partial p\pt" iA
-\dfrac{\partial$1}{\partial t}$0
+\dfrac{\partial $1}{\partial t}$0
+endsnippet
+
+context "math()"
+snippet pary "partial p\pt" iA
+\dfrac{\partial $1}{\partial y}$0
 endsnippet
 
 context "math()"
@@ -479,8 +488,23 @@ snippet xxx "(x)" iA
 endsnippet
 
 context "math()"
+snippet yyy "(y)" iA
+(y)
+endsnippet
+
+context "math()"
 snippet nnn "(n)" iA
 (n)
+endsnippet
+
+context "math()"
+snippet xxyy "(x,y)" iA
+(x,y)
+endsnippet
+
+context "math()"
+snippet xxzz "(x,y,z)" iA
+(x,y,z)
 endsnippet
 
 context "math()"
@@ -489,7 +513,7 @@ snippet ooo "infty" iA
 endsnippet
 
 context "math()"
-snippet hb "hbar" iA
+snippet hba "hbar" iA
 \hbar
 endsnippet
 
@@ -708,4 +732,25 @@ context "math()"
 snippet e-jo "(e^{-j omega})" iA
 (e^{-j \omega})
 endsnippet
+
+context "math()"
+snippet dsy "displaystyle 显示方法" iA
+\displaystyle 
+endsnippet
+
+context "math()"
+snippet vma "vmatrix" iA
+\begin{vmatrix} $0 \end{vmatrix}
+endsnippet
+
+context "math()"
+snippet mbf "mathhb text 字体" iA
+\mathbf{$1}$0
+endsnippet
+
+context "math()"
+snippet com "Combination 组合数" iA
+C_{${1:n}}^{${2:k}}$0
+endsnippet
+
 
